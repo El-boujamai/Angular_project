@@ -3,9 +3,12 @@ import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [ RouterOutlet,
+                RouterLink,
+                NgFor],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
+  standalone:true
 })
 export class App {
   protected readonly title = signal('ang_project');
